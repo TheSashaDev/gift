@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spin Wheel App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <canvas id="wheel"></canvas>
+        <button id="spin-btn" disabled>Spin</button>
+        <img src="https://i.imgur.com/i2SsKFe.png" alt="spinner arrow" />
+      </div>
+      <div id="final-value">
+        <p>Click On The Spin Button To Start</p>
+      </div>
+    </div>
+
+    <!-- Popup HTML -->
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <p>It's a wheel of fortune. You have six tries.</p>
+        <p>By the way, you have 6 attempts, but we have 1 attempt for ‘SPEAKING’</p>
+        <button id="continue-btn" disabled>Continue</button>
+      </div>
+    </div>
+
+    <!-- Result Popup HTML -->
+    <div id="result-popup" class="popup" style="display: none;">
+      <div class="popup-content">
+        <p>Dear Olena Leonidivna, happy birthday! I wish you always to be in a good mood and smile more often. I wish you happiness and health!</p>
+        <p>P.S. On your birthday, I want to wish myself 🤣 that you will be my teacher until the end of my school years.</p>
+        <button id="close-result-btn">Close</button>
+      </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-datalabels/2.1.0/chartjs-plugin-datalabels.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
